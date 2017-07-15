@@ -1,7 +1,5 @@
 <?php
-
-$params = require(__DIR__ . '/params.php');
-$db = require(__DIR__ . '/db.php');
+$common = require(__DIR__ . '/common.php');
 
 $config = [
     'id' => 'basic-console',
@@ -9,9 +7,6 @@ $config = [
     'bootstrap' => ['log'],
     'controllerNamespace' => 'app\commands',
     'components' => [
-        'cache' => [
-            'class' => 'yii\caching\FileCache',
-        ],
         'log' => [
             'targets' => [
                 [
@@ -20,16 +15,7 @@ $config = [
                 ],
             ],
         ],
-        'db' => $db,
     ],
-    'params' => $params,
-    /*
-    'controllerMap' => [
-        'fixture' => [ // Fixture generation command line.
-            'class' => 'yii\faker\FixtureController',
-        ],
-    ],
-    */
 ];
 
 if (YII_ENV_DEV) {
@@ -39,5 +25,7 @@ if (YII_ENV_DEV) {
         'class' => 'yii\gii\Module',
     ];
 }
+
+$config = array_merge_recursive($common, $config);
 
 return $config;

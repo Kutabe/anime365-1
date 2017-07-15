@@ -1,3 +1,5 @@
+config/local.php
+
 # windows thumbnail cache
 Thumbs.db
 

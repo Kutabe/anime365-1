@@ -1,7 +1,7 @@
 <?php
-
-$params = require(__DIR__ . '/params.php');
-$db = require(__DIR__ . '/db.php');
+// Config params common for web and console should be added to common.php
+// (for example pretty URL rules)
+$common = require(__DIR__ . '/common.php');
 
 $config = [
     'id' => 'basic',
@@ -22,13 +22,6 @@ $config = [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        'mailer' => [
-            'class' => 'yii\swiftmailer\Mailer',
-            // send all mails to a file by default. You have to set
-            // 'useFileTransport' to false and configure a transport
-            // for the mailer to send real emails.
-            'useFileTransport' => true,
-        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
@@ -38,17 +31,7 @@ $config = [
                 ],
             ],
         ],
-        'db' => $db,
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
-        */
     ],
-    'params' => $params,
 ];
 
 if (YII_ENV_DEV) {
@@ -66,6 +49,13 @@ if (YII_ENV_DEV) {
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
+}
+
+$config = array_merge_recursive($common, $config);
+
+// Ability to change $config without adding it to git
+if (file_exists(__DIR__ . '/local.php')) {
+    require(__DIR__ . '/local.php');
 }
 
 return $config;
