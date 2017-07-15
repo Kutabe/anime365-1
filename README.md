@@ -1,208 +1,44 @@
-Yii 2 Basic Project Template
-============================
+**[На русском (same text in russian)](#на-русском)**
 
-Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
-rapidly creating small projects.
+# Anime 365
 
-The template contains the basic features including user login/logout and a contact page.
-It includes all commonly used configurations that would allow you to focus on adding new
-features to your application.
+New version of [Anime 365](smotret-anime.ru), an website that features easy to use anime catalog and ability to watch anime online.
 
-[![Latest Stable Version](https://poser.pugx.org/yiisoft/yii2-app-basic/v/stable.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Total Downloads](https://poser.pugx.org/yiisoft/yii2-app-basic/downloads.png)](https://packagist.org/packages/yiisoft/yii2-app-basic)
-[![Build Status](https://travis-ci.org/yiisoft/yii2-app-basic.svg?branch=master)](https://travis-ci.org/yiisoft/yii2-app-basic)
+Backend is GraphQL API written using Yii 2, PHP 7.1 and PosgreSQL 9.6. We plan to use vue.js for frontend.
 
-DIRECTORY STRUCTURE
--------------------
+Because previous version of website was written using Yii 1, we decided to start this project from scratch and adding code from previous version step-by-step along with rewriting it.
 
-      assets/             contains assets definition
-      commands/           contains console commands (controllers)
-      config/             contains application configurations
-      controllers/        contains Web controller classes
-      mail/               contains view files for e-mails
-      models/             contains model classes
-      runtime/            contains files generated during runtime
-      tests/              contains various tests for the basic application
-      vendor/             contains dependent 3rd-party packages
-      views/              contains view files for the Web application
-      web/                contains the entry script and Web resources
 
+## Quick start (Windows)
+Download [ready to use package](https://smotret-anime.ru/content/dev_package.zip) with all required tools (PHP 7.1, nginx with php-fpm, PostgreSQL 9.6).
+1. Unzip package.
+2. Run Tools/Clone_project.cmd (this will clone project from git and install dependencies)
+3. Run Tools/Import_db.cmd (this will download SQL dump and import it).
+4. Run start.cmd and open [http://localhost/](http://localhost/) to check.
 
+We strongly suggest you to use "ready to use" package even if you already have some software from it. But if you still want to install it manually - see below.
 
-REQUIREMENTS
-------------
+## Quick start (Linux, MacOS, Windows) (manually)
 
-The minimum requirement by this project template that your Web server supports PHP 5.4.0.
+[Open instructions to setup project manually](INSTALL_EN.md)
 
+# На русском
 
-INSTALLATION
-------------
+Это новая версия [Anime 365](smotret-anime.ru), сайта с удобным каталогом аниме и онлайн просмотром.
 
-### Install via Composer
+Бекенд представлен в виде GraphQL API и написан на Yii 2, используя PHP 7.1 и PosgreSQL 9.6. Для фронтенда планируется vue.js.
 
-If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
-at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
+Так как предыдущая версия сайта была написана на Yii 1, то было решено начать проект с чистого листа, постепенно внедряя готовые решения из предыдущей версии (заодно дорабатывая их).
 
-You can then install this project template using the following command:
+## Быстрый старт (Windows)
+Скачайте [готовый пакет](https://smotret-anime.ru/content/dev_package.zip) со всем необходимым для разработки (уже настроенные PHP 7.1, nginx с php-fpm, PostgreSQL 9.6).
+1. Разархивируйте пакет в удобную для себя папку.
+2. Запустите Tools/Clone_project.cmd (склонирует актуальную версию из git и установит зависимости)
+3. Запустите Tools/Import_db.cmd (скачает актуальный дамп базы и импортирует его).
+4. Запустите start.cmd и зайдите на [http://localhost/](http://localhost/), чтобы проверить, что всё работает.
 
-~~~
-php composer.phar global require "fxp/composer-asset-plugin:^1.3.1"
-php composer.phar create-project --prefer-dist --stability=dev yiisoft/yii2-app-basic basic
-~~~
+Советуем вам использовать готовый пакет даже если у вас уже установлена часть софта. Однако если вы хотите установить всё вручную, смотрите следующий пункт.
 
-Now you should be able to access the application through the following URL, assuming `basic` is the directory
-directly under the Web root.
+## Быстрый старт (Linux, MacOS, Windows) (вручную)
 
-~~~
-http://localhost/basic/web/
-~~~
-
-
-### Install from an Archive File
-
-Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
-a directory named `basic` that is directly under the Web root.
-
-Set cookie validation key in `config/web.php` file to some random secret string:
-
-```php
-'request' => [
-    // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
-    'cookieValidationKey' => '<secret random string goes here>',
-],
-```
-
-You can then access the application through the following URL:
-
-~~~
-http://localhost/basic/web/
-~~~
-
-
-CONFIGURATION
--------------
-
-### Database
-
-Edit the file `config/db.php` with real data, for example:
-
-```php
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
-    'username' => 'root',
-    'password' => '1234',
-    'charset' => 'utf8',
-];
-```
-
-**NOTES:**
-- Yii won't create the database for you, this has to be done manually before you can access it.
-- Check and edit the other files in the `config/` directory to customize your application as required.
-- Refer to the README in the `tests` directory for information specific to basic application tests.
-
-
-
-TESTING
--------
-
-Tests are located in `tests` directory. They are developed with [Codeception PHP Testing Framework](http://codeception.com/).
-By default there are 3 test suites:
-
-- `unit`
-- `functional`
-- `acceptance`
-
-Tests can be executed by running
-
-```
-vendor/bin/codecept run
-``` 
-
-The command above will execute unit and functional tests. Unit tests are testing the system components, while functional
-tests are for testing user interaction. Acceptance tests are disabled by default as they require additional setup since
-they perform testing in real browser. 
-
-
-### Running  acceptance tests
-
-To execute acceptance tests do the following:  
-
-1. Rename `tests/acceptance.suite.yml.example` to `tests/acceptance.suite.yml` to enable suite configuration
-
-2. Replace `codeception/base` package in `composer.json` with `codeception/codeception` to install full featured
-   version of Codeception
-
-3. Update dependencies with Composer 
-
-    ```
-    composer update  
-    ```
-
-4. Download [Selenium Server](http://www.seleniumhq.org/download/) and launch it:
-
-    ```
-    java -jar ~/selenium-server-standalone-x.xx.x.jar
-    ```
-
-    In case of using Selenium Server 3.0 with Firefox browser since v48 or Google Chrome since v53 you must download [GeckoDriver](https://github.com/mozilla/geckodriver/releases) or [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and launch Selenium with it:
-
-    ```
-    # for Firefox
-    java -jar -Dwebdriver.gecko.driver=~/geckodriver ~/selenium-server-standalone-3.xx.x.jar
-    
-    # for Google Chrome
-    java -jar -Dwebdriver.chrome.driver=~/chromedriver ~/selenium-server-standalone-3.xx.x.jar
-    ``` 
-    
-    As an alternative way you can use already configured Docker container with older versions of Selenium and Firefox:
-    
-    ```
-    docker run --net=host selenium/standalone-firefox:2.53.0
-    ```
-
-5. (Optional) Create `yii2_basic_tests` database and update it by applying migrations if you have them.
-
-   ```
-   tests/bin/yii migrate
-   ```
-
-   The database configuration can be found at `config/test_db.php`.
-
-
-6. Start web server:
-
-    ```
-    tests/bin/yii serve
-    ```
-
-7. Now you can run all available tests
-
-   ```
-   # run all available tests
-   vendor/bin/codecept run
-
-   # run acceptance tests
-   vendor/bin/codecept run acceptance
-
-   # run only unit and functional tests
-   vendor/bin/codecept run unit,functional
-   ```
-
-### Code coverage support
-
-By default, code coverage is disabled in `codeception.yml` configuration file, you should uncomment needed rows to be able
-to collect code coverage. You can run your tests and collect coverage with the following command:
-
-```
-#collect coverage for all tests
-vendor/bin/codecept run -- --coverage-html --coverage-xml
-
-#collect coverage only for unit tests
-vendor/bin/codecept run unit -- --coverage-html --coverage-xml
-
-#collect coverage for unit and functional tests
-vendor/bin/codecept run functional,unit -- --coverage-html --coverage-xml
-```
-
-You can see code coverage output under the `tests/_output` directory.
+[Открыть инструкцию по настройке вручную](INSTALL_RU.md)
