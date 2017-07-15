@@ -77,8 +77,8 @@ server {
         }
         location ~ ^/index.php$ {
             # NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
-            set $fsn /upload.php;
             fastcgi_pass unix:/var/run/php/php7.1-fpm.sock;
+            #fastcgi_pass 127.0.0.1:9100; # For Windows
             include fastcgi_params;
             fastcgi_param SCRIPT_FILENAME /your/path/www/index.php; # Change to your path (folder with sources)
             fastcgi_param DOCUMENT_ROOT /your/path; # Change to your path (folder with sources)

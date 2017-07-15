@@ -1,27 +1,31 @@
 {
-    "name": "yiisoft/yii2-app-basic",
-    "description": "Yii 2 Basic Project Template",
-    "keywords": ["yii2", "framework", "basic", "project template"],
-    "homepage": "http://www.yiiframework.com/",
+    "name": "a365/a365",
+    "description": "Anime 365",
+    "homepage": "https://github.com/a365/a365",
     "type": "project",
-    "license": "BSD-3-Clause",
+    "license": "CPAL-1.0",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2"
+        "issues": "https://github.com/a365/a365/issues?state=open",
+        "email": "info@smotret-anime.ru",
+        "source": "https://github.com/a365/a365"
     },
     "minimum-stability": "stable",
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=7.1.0",
+        "ext-curl": "*",
+        "ext-intl": "*",
+        "ext-mbstring": "*",
+        "ext-PDO": "*",
+        "ext-pdo_pgsql": "*",
         "yiisoft/yii2": "~2.0.5",
         "yiisoft/yii2-bootstrap": "~2.0.0",
-        "yiisoft/yii2-swiftmailer": "~2.0.0"
+        "yiisoft/yii2-swiftmailer": "~2.0.0",
+        "insolita/yii2-migration-generator": "~2.3",
+        "webonyx/graphql-php": "^0.9.12"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.0.0",
-        "yiisoft/yii2-gii": "~2.0.0",
+        "yiisoft/yii2-gii": "^2.0",
         "yiisoft/yii2-faker": "~2.0.0",
 
         "codeception/base": "^2.2.3",

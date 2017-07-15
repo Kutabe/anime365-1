@@ -28,12 +28,12 @@
       <sourceFolder url="file://$MODULE_DIR$/vendor/codeception/base/tests/data/params/tests/_support" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/vendor/codeception/specify/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/behat/gherkin" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/bootstrap" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/jquery" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/jquery.inputmask" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/punycode" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/typeahead.js" />
-      <excludeFolder url="file://$MODULE_DIR$/vendor/bower-asset/yii2-pjax" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bower/jquery" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bower/jquery.inputmask" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bower/punycode" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bower/typeahead.js" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/bower/yii2-pjax" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/cebe/markdown" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/codeception/base" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/codeception/specify" />
@@ -43,6 +43,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/ezyang/htmlpurifier" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/insolita/yii2-migration-generator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phar-io/manifest" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/phar-io/version" />
@@ -84,6 +85,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/webonyx/graphql-php" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-bootstrap" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/yiisoft/yii2-composer" />
@@ -110,12 +112,12 @@
       <library name="PHP" type="php">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/behat/gherkin" />
-          <root url="file://$MODULE_DIR$/vendor/bower-asset/bootstrap" />
-          <root url="file://$MODULE_DIR$/vendor/bower-asset/jquery" />
-          <root url="file://$MODULE_DIR$/vendor/bower-asset/jquery.inputmask" />
-          <root url="file://$MODULE_DIR$/vendor/bower-asset/punycode" />
-          <root url="file://$MODULE_DIR$/vendor/bower-asset/typeahead.js" />
-          <root url="file://$MODULE_DIR$/vendor/bower-asset/yii2-pjax" />
+          <root url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
+          <root url="file://$MODULE_DIR$/vendor/bower/jquery" />
+          <root url="file://$MODULE_DIR$/vendor/bower/jquery.inputmask" />
+          <root url="file://$MODULE_DIR$/vendor/bower/punycode" />
+          <root url="file://$MODULE_DIR$/vendor/bower/typeahead.js" />
+          <root url="file://$MODULE_DIR$/vendor/bower/yii2-pjax" />
           <root url="file://$MODULE_DIR$/vendor/cebe/markdown" />
           <root url="file://$MODULE_DIR$/vendor/codeception/base" />
           <root url="file://$MODULE_DIR$/vendor/codeception/specify" />
@@ -125,6 +127,7 @@
           <root url="file://$MODULE_DIR$/vendor/ezyang/htmlpurifier" />
           <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
+          <root url="file://$MODULE_DIR$/vendor/insolita/yii2-migration-generator" />
           <root url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
           <root url="file://$MODULE_DIR$/vendor/phar-io/manifest" />
           <root url="file://$MODULE_DIR$/vendor/phar-io/version" />
@@ -166,6 +169,7 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
           <root url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+          <root url="file://$MODULE_DIR$/vendor/webonyx/graphql-php" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-bootstrap" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-composer" />
@@ -176,12 +180,12 @@
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/behat/gherkin" />
-          <root url="file://$MODULE_DIR$/vendor/bower-asset/bootstrap" />
-          <root url="file://$MODULE_DIR$/vendor/bower-asset/jquery" />
-          <root url="file://$MODULE_DIR$/vendor/bower-asset/jquery.inputmask" />
-          <root url="file://$MODULE_DIR$/vendor/bower-asset/punycode" />
-          <root url="file://$MODULE_DIR$/vendor/bower-asset/typeahead.js" />
-          <root url="file://$MODULE_DIR$/vendor/bower-asset/yii2-pjax" />
+          <root url="file://$MODULE_DIR$/vendor/bower/bootstrap" />
+          <root url="file://$MODULE_DIR$/vendor/bower/jquery" />
+          <root url="file://$MODULE_DIR$/vendor/bower/jquery.inputmask" />
+          <root url="file://$MODULE_DIR$/vendor/bower/punycode" />
+          <root url="file://$MODULE_DIR$/vendor/bower/typeahead.js" />
+          <root url="file://$MODULE_DIR$/vendor/bower/yii2-pjax" />
           <root url="file://$MODULE_DIR$/vendor/cebe/markdown" />
           <root url="file://$MODULE_DIR$/vendor/codeception/base" />
           <root url="file://$MODULE_DIR$/vendor/codeception/specify" />
@@ -191,6 +195,7 @@
           <root url="file://$MODULE_DIR$/vendor/ezyang/htmlpurifier" />
           <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
           <root url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
+          <root url="file://$MODULE_DIR$/vendor/insolita/yii2-migration-generator" />
           <root url="file://$MODULE_DIR$/vendor/myclabs/deep-copy" />
           <root url="file://$MODULE_DIR$/vendor/phar-io/manifest" />
           <root url="file://$MODULE_DIR$/vendor/phar-io/version" />
@@ -232,6 +237,7 @@
           <root url="file://$MODULE_DIR$/vendor/symfony/yaml" />
           <root url="file://$MODULE_DIR$/vendor/theseer/tokenizer" />
           <root url="file://$MODULE_DIR$/vendor/webmozart/assert" />
+          <root url="file://$MODULE_DIR$/vendor/webonyx/graphql-php" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-bootstrap" />
           <root url="file://$MODULE_DIR$/vendor/yiisoft/yii2-composer" />
