@@ -1,5 +1,5 @@
 # Установка вручную
-Если вы пользуетесь Windows, то настоятельно советуем воспользоваться готовым пакетом, в котором всё уже установлено. Как это сделать см. [здесь](../README.md#windows).
+Если вы пользуетесь Windows, то настоятельно рекомендуем воспользоваться готовым пакетом, в котором всё уже установлено. Как это сделать см. [здесь](README.md#Быстрый-старт-windows).
 
 В качестве примера Linux используется Ubuntu.
 
@@ -37,7 +37,7 @@ exit # Выходим из сессии от имени postgres
 Откройте SQL редактор (например Navicat или pgAdmin), войдите от пользователя anime365 и выберите базу данных anime365. Скачайте [dev_dump.sql.gz](https://smotret-anime.ru/content/dev_dump.sql.gz), разахивируйте его, а затем импортируйте.
 Если при импорте возникают ошибки, проверьте включено ли у вас расширение pg_trgm (см. код во втором пункте).
 
-Также для импорта можно использовать Tools/Import_db.cmd из [нашего пакета для Windows](../README.md#windows).
+Также для импорта можно использовать Tools/Import_db.cmd из [нашего пакета для Windows](README.md#Быстрый-старт-windows).
 
 ### Linux:
 ```
@@ -58,8 +58,8 @@ apt-get update && apt-get install software-properties-common python-software-pro
 
 ## 5. Скачайте и установите проект
 ```
-git clone https://github.com/a365/a365.git
-cd a365
+git clone https://github.com/a365/anime365.git
+cd anime365
 composer global require "fxp/composer-asset-plugin:^1.2.0" -vv --profile
 composer install -vv --profile
 ```
@@ -92,7 +92,7 @@ server {
 	}
 ```
 
-## Настройка PHP
+## 7. Настройка PHP
 Отредактируйте php.ini, установив `cgi.fix_pathinfo = 0;`.
 ### Дополнительно (для Windows)
 Активируйте (раскомментируйте в php.ini) расширения:
@@ -104,7 +104,7 @@ extension=php_openssl.dll
 extension=php_pdo_pgsql.dll
 ```
 
-## 7. Измените config/db.php
+## 8. Измените config/db.php
 Откройте `config/db.php` и измените пароль на тот, который вы использовали при установке PostgreSQL.
 
 (в этом нет необходимости если вы использовали пароль "anime365")

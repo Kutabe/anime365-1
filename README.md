@@ -1,8 +1,8 @@
-**[На русском (same text in russian)](#на-русском)**
+**[На русском (same text in russian)](#На-русском)**
 
 # Anime 365
 
-New version of [Anime 365](smotret-anime.ru), an website that features easy to use anime catalog and ability to watch anime online.
+New version of [Anime 365](https://smotret-anime.ru), an website that features easy to use anime catalog and ability to watch anime online.
 
 Backend is GraphQL API written using Yii 2, PHP 7.1 and PosgreSQL 9.6. We plan to use vue.js for frontend.
 
@@ -16,7 +16,7 @@ Download [ready to use package](https://smotret-anime.ru/content/dev_package.zip
 3. Run Tools/Import_db.cmd (this will download SQL dump and import it).
 4. Run start.cmd and open [http://localhost/](http://localhost/) to check.
 
-We strongly suggest you to use "ready to use" package even if you already have some software from it. But if you still want to install it manually - see below.
+We strongly recommend you to use "ready to use" package even if you already have some software from it. But if you still want to install it manually - see below.
 
 ## Quick start (Linux, MacOS, Windows) (manually)
 
@@ -24,7 +24,7 @@ We strongly suggest you to use "ready to use" package even if you already have s
 
 # На русском
 
-Это новая версия [Anime 365](smotret-anime.ru), сайта с удобным каталогом аниме и онлайн просмотром.
+Это новая версия [Anime 365](https://smotret-anime.ru), сайта с удобным каталогом аниме и онлайн просмотром.
 
 Бекенд представлен в виде GraphQL API и написан на Yii 2, используя PHP 7.1 и PosgreSQL 9.6. Для фронтенда планируется vue.js.
 
@@ -37,7 +37,7 @@ We strongly suggest you to use "ready to use" package even if you already have s
 3. Запустите Tools/Import_db.cmd (скачает актуальный дамп базы и импортирует его).
 4. Запустите start.cmd и зайдите на [http://localhost/](http://localhost/), чтобы проверить, что всё работает.
 
-Советуем вам использовать готовый пакет даже если у вас уже установлена часть софта. Однако если вы хотите установить всё вручную, смотрите следующий пункт.
+Настоятельно рекомендуем вам использовать готовый пакет даже если у вас уже установлена часть софта. Однако если вы всё таки хотите установить всё вручную, смотрите следующий пункт.
 
 ## Быстрый старт (Linux, MacOS, Windows) (вручную)
 

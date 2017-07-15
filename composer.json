@@ -1,13 +1,13 @@
 {
     "name": "a365/a365",
     "description": "Anime 365",
-    "homepage": "https://github.com/a365/a365",
+    "homepage": "https://github.com/a365/anime365",
     "type": "project",
     "license": "CPAL-1.0",
     "support": {
-        "issues": "https://github.com/a365/a365/issues?state=open",
+        "issues": "https://github.com/a365/anime365/issues?state=open",
         "email": "info@smotret-anime.ru",
-        "source": "https://github.com/a365/a365"
+        "source": "https://github.com/a365/anime365"
     },
     "minimum-stability": "stable",
     "require": {

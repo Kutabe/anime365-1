@@ -1,5 +1,5 @@
 # Manual installation
-If you're using Windows, then we strongly suggest you to use "ready to use" package. [See more](README.md#windows).
+If you're using Windows, then we strongly recommend you to use "ready to use" package. [See more](README.md#quick-start-windows).
 
 Ubuntu is used in examples for Linux.
 
@@ -36,7 +36,7 @@ Check if you installed postgresql-contrib if you getting an error when executing
 Use your favorite SQL editor (for example Navicat or pgAdmin), login as "anime365" and select database "anime365". Download [dev_dump.sql.gz](https://smotret-anime.ru/content/dev_dump.sql.gz), unzip it, and then import.
 If during import you getting an errors, check if extension pg_trgm installed (see above).
 
-You can also import using script Tools/Import_db.cmd from [our package for Windows](../README.md#windows).
+You can also import using script Tools/Import_db.cmd from [our package for Windows](README.md#quick-start-windows).
 
 ### Linux:
 ```
@@ -56,8 +56,8 @@ apt-get update && apt-get install software-properties-common python-software-pro
 
 ## 5. Download and setup project
 ```
-git clone https://github.com/a365/a365.git
-cd a365
+git clone https://github.com/a365/anime365.git
+cd anime365
 composer global require "fxp/composer-asset-plugin:^1.2.0" -vv --profile
 composer install -vv --profile
 ```
@@ -89,7 +89,7 @@ server {
 	}
 ```
 
-## Change PHP settings
+## 7. Change PHP settings
 Edit `php.ini` and change `cgi.fix_pathinfo = 0;`.
 ### And also (if you using Windows)
 Activate (uncomment in php.ini) these extensions:
@@ -101,7 +101,7 @@ extension=php_openssl.dll
 extension=php_pdo_pgsql.dll
 ```
 
-## 7. Change config/db.php
+## 8. Change config/db.php
 Open `config/db.php` and change password to the password you used during PostgreSQL installation.
 
 (that not necessary if you used password "anime365")
